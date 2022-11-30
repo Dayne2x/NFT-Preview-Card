@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+    
+}
+
+.card-wrap {
+    background-color:hsl(216, 50%, 16%);
+    width: 400px;
+    border-radius: 15px;
+}
+
+.image-card {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cr-image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15px;
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
+h2 {
+    padding-left: 40px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Outfit", "sans-serif";
+    font-weight: 600;
+}
+
+#desc {
+    padding-left: 40px;
+    padding-top: 15px;
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit", "sans-serif";
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.value-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.border {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#ethereum {
+    margin-right: 120px;
+    font-family: "Outfit", sans-serif;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+#time {
+    font-family: "Outfit", "sans-serif";
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#about {
+margin-top: 25px;
+font-family: "Outfit", "sans-serif";
+color: hsl(215, 51%, 70%);
+font-weight: 300;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+a {
+    font-family: "Outfit", "sans-serif";
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+img:hover {
+    color:hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit", "sans-serif";
+}
+
+.container .image-card {
+    position: relative;
+
+}
+
+.eye-cont {
+    position:absolute;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    z-index: 999;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: hsl(178, 100%, 50%, 50%);
+}
+
+.container .image-card .eye-cont:hover {
+    opacity: 1;
+    cursor: pointer;
+}
